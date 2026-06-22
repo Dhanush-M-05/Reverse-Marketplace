@@ -1,0 +1,21 @@
+.dash {
+  min-height: 100vh;
+  background: var(--bg);
+}
+.dash-main {
+  margin-left: var(--sidebar-w);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.dash-content {
+  padding: 28px;
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .dash-main { margin-left: 0; }
+}
+@media (max-width: 600px) {
+  .dash-content { padding: 18px 14px; }
+}

@@ -1,0 +1,15 @@
+.browse-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.browse-sidebar { position: sticky; top: calc(var(--nav-h) + 16px); }
+.browse-filter-btn { display: none; }
+
+@media (max-width: 900px) {
+  .browse-layout { grid-template-columns: 1fr; }
+  .browse-sidebar { display: none; }
+  .browse-sidebar.open { display: block; position: static; }
+  .browse-filter-btn { display: inline-flex; }
+}

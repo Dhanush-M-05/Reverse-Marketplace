@@ -1,0 +1,22 @@
+.profile-cover { overflow: hidden; padding-bottom: 22px; }
+.profile-cover-bg {
+  height: 120px;
+  background:
+    radial-gradient(400px 200px at 20% 0%, rgba(0,212,181,0.4), transparent 60%),
+    var(--gradient-brand);
+}
+.profile-cover-body {
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+  padding: 0 24px;
+  margin-top: -40px;
+  flex-wrap: wrap;
+}
+.profile-cover-body .avatar { border: 4px solid var(--surface); }
+.profile-cover-info { flex: 1; padding-bottom: 6px; }
+.profile-cover .profile-stats { padding: 0 24px; margin-top: 18px; }
+
+@media (max-width: 600px) {
+  .profile-cover-body { margin-top: -30px; }
+}
